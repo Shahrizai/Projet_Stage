@@ -53,4 +53,14 @@ function getRandomKittyName() {
     return allKittyNames[randomIntFromInterval(0, 1099)]
 }
 
+function playMeow() {
+    let sound = document.getElementById("audio");
+    sound.play();
+}
+
+function fusion() {
+    setContent('pseudo');
+    playMeow();
+}
+
 //strRandom(document.getElementById('userInput').value
