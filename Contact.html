@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li class="active"><a href="Index.html">Home</a></li>
+            <li><a href="Index.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Adoption.html">Adoption</a></li>
+        </ul>
+    </div>
+    <div class="formContainer">
+        <h2>Formulaire de Contact</h2>
+        <form action="Contact.html" method="">
+            <label>Identité</label>
+            <input autofocus required name="identite" type="text" id="identite" placeholder="votre nom">
+            <label>Email</label>
+            <input required name="email" type="email" id="email" placeholder="Votre mail">
+            <label>Message</label>
+            <textarea cols="30" rows="10"></textarea>
+            <input required name="message" type="submit" id="message" value="envoyez"
+                onclick="vérificationFormulaire()">
+        </form>
+    </div>
+    <div class="footer">
+        <p><b>&copy; Layalfeu - 2022</b></p>
+    </div>
+    <script src="formulaire.js"></script>
+</body>
+
+</html>

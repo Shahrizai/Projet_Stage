@@ -1,0 +1,296 @@
+body {
+    background-color: grey;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(114, 169, 201);
+    z-index: 905;
+}
+h2 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+img {
+    width: 100%;
+}
+
+.article {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
+    width: 90%;
+    background-color: rgb(83, 83, 83);
+
+}
+
+.article p {
+    font-size: 14px;
+    text-align: justify;
+    margin: 2%;
+    padding-bottom: 1%;
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    text-align: center;
+    background-color: #3333;
+    z-index: 903;
+}
+
+.nav ul {
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+}
+
+.nav li a:hover {
+    background-color: black;
+}
+
+.active {
+    background-color: rgb(114, 169, 201);
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0px;
+    z-index: 901;
+}
+
+.table {
+    width: 80%;
+    margin-bottom: 90px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table table th {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table table td {
+    height: 30px;
+}
+
+.table table th,
+.table table td {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table table tr:hover {
+    background-color: lightblue;
+}
+
+.footer-bottom {
+    position: fixed;
+    bottom: 0em;
+}
+
+.formContainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formContainer input,
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 8px 0;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.formContainer textarea {
+    resize: none;
+}
+
+.formContainer input[type=submit] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #120103;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    background: #3e474f;
+    box-shadow: 0 0.5em 1em #111;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+}
+
+header label {
+    color: #788188;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 4.25em;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+header label:hover {
+    background: #2e353b;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-color: #120103;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: left 0s 0.75s;
+}
+
+.slide-one {
+    background-image: url(https://fac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ffac.2F2018.2F11.2F20.2Ff940f670-fc2e-497e-afce-919048436b67.2Ejpeg/850x478/quality/90/crop-from/center/focus-point/593%2C405/les-8-cles-d-un-chaton-en-pleine-sante.jpeg);
+}
+
+.slide-two {
+    background-image: url(https://napoleon-storage.s3.eu-west-3.amazonaws.com/blog-articles/main/EVLQXmZ0QdtFoKuVWO3kWDggC0kMhbeHDlLcAMgg.jpeg);
+}
+
+.slide-three {
+    background-image: url(https://www.zooplus.be/magazine/wp-content/uploads/2019/06/arriv%C3%A9e-dun-chaton-%C3%A0-la-maison.jpeg);
+}
+
+.slide-four {
+    background-image: url(https://www.monchat.ca/wp-content/uploads/2020/03/developpement-du-chaton-8-premieres-semaines2.jpg);
+}
+
+[id^="slide"]:checked+.slide {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+
+.slide h1 {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.5s 0.5s, opacity 0.5s;
+}
+
+[id^="slide"]:checked+.slide h1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s 0.5s;
+}
+
+.messagedefilant {
+    display: block;
+    margin: 40px auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    max-width: 640px;
+    height: 60px;
+}
+
+.messagedefilant div {
+    position: absolute;
+    min-width: 100%;
+    /* au minimum la largeur du conteneur */
+}
+
+.messagedefilant div span,
+.messagedefilant div:after {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    white-space: nowrap;
+    top: 0;
+}
+
+.messagedefilant div span {
+    animation: defilement 10s infinite linear;
+    background: #cde;
+}
+
+.messagedefilant div:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: attr(data-text);
+    animation: defilement2 10s infinite linear;
+    background: #edc;
+}
+
+.generateur {
+    margin-top: 90px;
+    background-color: rgb(192, 188, 188);
+}
+
+@media screen and (min-width: 1080px) {
+    .formContainer {
+        width: 50%;
+    }
+
+    .table {
+        width: 50%;
+    }
+
+    .article {
+        width: 60%;
+    }
+}
+
+@keyframes defilement {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+}
+
+@keyframes defilement2 {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
