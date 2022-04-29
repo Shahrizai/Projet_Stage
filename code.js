@@ -21,6 +21,11 @@ function setContent(id) {
     document.getElementById(id).innerHTML = options.setFirstLetterUpperCase ? uppercaseFirstLetter(content) : content;
 }
 
+function playMeow() {
+    let sound = document.getElementById("audio");
+    sound.play();
+}
+
 // Main JS
 function strRandom(mylength) {
     var a = 10,
@@ -51,11 +56,6 @@ function strRandom(mylength) {
 
 function getRandomKittyName() {
     return allKittyNames[randomIntFromInterval(0, 1099)]
-}
-
-function playMeow() {
-    let sound = document.getElementById("audio");
-    sound.play();
 }
 
 function fusion() {
