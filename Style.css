@@ -11,6 +11,10 @@ h2 {
     text-align: center;
     color: whitesmoke;
 }
+h3{
+    text-align: center;
+    color: rgb(114, 169, 201);
+}
 
 img {
     width: 100%;
@@ -81,11 +85,13 @@ img {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    border-style: outset;
+    font-style: italic;
 }
 
 .table table th {
     border-collapse: collapse;
-    width: 100%;
+    width: 50%;
 }
 
 .table table td {
@@ -96,6 +102,7 @@ img {
 .table table td {
     border: 1px solid #ddd;
     text-align: center;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .table table tr:hover {
@@ -111,6 +118,7 @@ img {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 90px;
 }
 
 .formContainer input,
@@ -259,6 +267,14 @@ header label:hover {
 .generateur {
     margin-top: 90px;
     background-color: rgb(192, 188, 188);
+}
+.gmap {
+    width: 910px;
+    height: 600px;
+    border: 0;
+    margin: auto;
+    display: block;
+    margin-bottom: 90px;
 }
 
 @media screen and (min-width: 1080px) {

@@ -50,7 +50,7 @@ function strRandom(mylength) {
 }
 
 function getRandomKittyName() {
-    return allKittyNames[randomIntFromInterval(0, 199)]
+    return allKittyNames[randomIntFromInterval(0, 1099)]
 }
 
 //strRandom(document.getElementById('userInput').value
